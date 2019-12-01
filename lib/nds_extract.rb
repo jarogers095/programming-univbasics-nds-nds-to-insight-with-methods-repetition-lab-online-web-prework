@@ -25,7 +25,10 @@ def gross_for_director(d)
 end
 
 def list_of_directors(source)
-  # Write this implementation
+  directors = []
+  source.each do |n|
+    directors.push(n[:name])
+  end
 end
 
 def total_gross(source)
