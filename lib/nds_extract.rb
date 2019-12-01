@@ -44,11 +44,11 @@ def total_gross(source)
   # returned by directors_totals, and add it to a running total. When done,
   # return the total
   total = 0
-  directors = list_of_directors(source)
-  totals = directors_totals(source)
+  directors_names = list_of_directors(source)
+  director_and_gross_List = directors_totals(source)
   
-  directors.each do |n|
-    total += totals[n]
+  directors_names.each do |name|
+    total += director_and_gross_list[name]
   end
   
   return total
